@@ -6,8 +6,8 @@ Parse, extract and analyse raw log with AI. Demo repository on example Hadoop Di
 - Python >= 3.6
 
 This demo is based on two toolkits:
-- [Logparser](https://github.com/logpai/logparser/tree/dev
-- [Loglizer](https://github.com/logpai/loglizer)
+- [logpai/logparser](https://github.com/logpai/logparser/tree/dev)
+- [logpai/loglizer](https://github.com/logpai/loglizer)
 
 _logparser_ is a toolkit with a list of algorithms for log parsing. And _loglizer_ is another toolkit with a list of algorithms for anomaly detection.
 
