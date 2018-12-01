@@ -5,9 +5,14 @@ global_data = {
     'label_file_name': 'label_process.csv',
     'label_ori': 'anomaly_label.csv',
     'log_ori': 'HDFS.log_structured.csv',
+    'path_result_log_parsing_dir': 'results/',
     'path_result_log_parsing': 'results/HDFS.log_structured.csv',
     'log_event_ori': 'results/HDFS.log_templates.csv',
 }
+
+# Log format
+log_name = 'HDFS'
+log_format = {'HDFS': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>'}
 
 # Log parsing
 IPLom_settings = {
