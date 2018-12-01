@@ -10,6 +10,14 @@ global_data = {
     'log_event_ori': 'results/HDFS.log_templates.csv',
 }
 
+path_file_name = {
+    'path_result': 'results/',
+    'label_raw': 'anomaly_labels.csv',
+    'label_process': 'labels.csv',
+    'log_parser': 'HDFS.log_structured.csv',
+    'log_feat_extract': 'log_sequence.csv'
+}
+
 # Log format
 log_name = 'HDFS'
 log_format = {'HDFS': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>'}
