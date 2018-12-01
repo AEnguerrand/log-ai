@@ -5,6 +5,7 @@ from loglizer.models import PCA as PCA
 from loglizer.utils import data_loader
 from datetime import datetime
 
+
 def run_im():
     starttime = datetime.now()
     raw_data, label_data = data_loader.hdfs_data_loader(config.para['IM'])
@@ -29,7 +30,8 @@ def run_log_cluster():
     weighted_matrix, total_inst_num = cluster.weighting(raw_data)
     succ_index_list, fail_index_list, train_base_data, train_online_data, testing_data, train_base_label, train_online_label, testing_label = cluster.split_data(
         config.para['LOG_CLUSTER'], weighted_matrix, label_data)
-    cluster.anomalyDetect(config.para['LOG_CLUSTER'], succ_index_list, fail_index_list, train_base_data, train_online_data,
+    cluster.anomalyDetect(config.para['LOG_CLUSTER'], succ_index_list, fail_index_list, train_base_data,
+                          train_online_data,
                           testing_data,
                           train_online_label, testing_label, total_inst_num)
     print("[LOG CLUSTER][RUNTIME]: ", datetime.now() - starttime)
