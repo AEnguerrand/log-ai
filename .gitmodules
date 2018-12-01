@@ -1,0 +1,8 @@
+[submodule "logparser"]
+    path = logparser
+    url = https://github.com/logpai/logparser.git
+    branch = dev
+[submodule "loglizer"]
+   path = loglizer
+   url = https://github.com/logpai/loglizer.git
+   branch = master
